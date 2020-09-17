@@ -54,7 +54,7 @@ Widget Icons1(String title,var image,tab){
      fit: BoxFit.fill,
  ),),
         ),
-        Container(padding: EdgeInsets.only(top: 5),
+        Container(padding: EdgeInsets.only(top: 2),
             child: Text("$title",style: TextStyle(fontWeight: FontWeight.bold,
                 // fontSize: height/50
             ),)  //edit

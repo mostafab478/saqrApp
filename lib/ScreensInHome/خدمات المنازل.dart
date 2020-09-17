@@ -60,7 +60,7 @@ class _HomeServiceState extends State<HomeService> {
                     child: Row(mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(right:12.0),
+                          padding: const EdgeInsets.only(right:1.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -145,7 +145,7 @@ class _HomeServiceState extends State<HomeService> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right:2.0,left:2.0),
+                          padding: const EdgeInsets.only(right:1.0),
                           child: CircleAvatar(backgroundImage: AssetImage("lib/Assets/chLocation.png"),radius: height/13,),
                         ),
 
