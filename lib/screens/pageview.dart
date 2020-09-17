@@ -88,26 +88,30 @@ var currentI;
 
         Column(mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            RaisedButton(
-
-              elevation: 0,
-
-              color: Colors.transparent,
-
-              onPressed: (){
-                Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> Languagechange() ));
-              },
-              child: Row(
-
+            Row(mainAxisAlignment: MainAxisAlignment.start,
               children: [
+                RaisedButton(
 
-                Icon(Icons.arrow_back),
+                  elevation: 0,
 
-                Text("skip".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
+                  color: Colors.transparent,
 
+                  onPressed: (){
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> Languagechange() ));
+                  },
+                  child: Row(
+
+                  children: [
+
+                    Icon(Icons.arrow_back),
+
+                    Text("skip".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
+
+                  ],
+
+                ),),
               ],
-
-            ),),
+            ),
           ],
         ),
 

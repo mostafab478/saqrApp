@@ -49,6 +49,23 @@
   "page2": "Find The Service You Need",
   "page3": "Select Your Location And Get Your Nearest Service Provider",
   "skip": "Skip",
-  "chLang": " Please chose the language of the app : "
+  "chLang": " Please chose the language of the app : ",
+  "addservice": "Add service",
+  "servicename": "service name",
+  "location": "Location",
+  "idpic": "Id picture",
+  "licensepic": "License picture",
+  "platenum": "Plate number",
+  "platepicfront": " Front plate picture ",
+  "platepicbehind": " Behind plate picture ",
+  "anotherpic": " Another picture ",
+  "jopname": " Jop name ",
+  "thchange": " Please chose the theme of the app : ",
+  "light": " Light Mode ",
+  "dark": " Dark Mode ",
+  "arabic": "Arabic",
+  "english": "English"
+
+
 
 }

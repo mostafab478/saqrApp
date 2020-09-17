@@ -40,8 +40,10 @@ class _HeavyEquipmentState extends State<HeavyEquipment> {
                    fit: BoxFit.fill,
                  ),),
              ),
-             Container(padding: EdgeInsets.only(top: 5),
-                 child: Text("$title",style: TextStyle(fontWeight: FontWeight.bold,),)
+             Expanded(
+               child: Container(padding: EdgeInsets.only(top: 3),
+                   child: Text("$title",style: TextStyle(fontWeight: FontWeight.bold,),)
+               ),
              ),
            ],
          ),
@@ -51,6 +53,8 @@ class _HeavyEquipmentState extends State<HeavyEquipment> {
 
 
    return Scaffold(
+
+       appBar: AppBar(),
 
        body: Stack(
          children: [
@@ -69,7 +73,7 @@ class _HeavyEquipmentState extends State<HeavyEquipment> {
                            padding: EdgeInsets.only(right: width/18),
                            alignment: Alignment.topRight,
                            child: Text("HeavyEquipment".tr().toString(),style: TextStyle(
-                             fontSize: height/20,
+                             fontSize:30,
                              fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
                          ),
                        ),

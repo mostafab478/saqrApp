@@ -40,8 +40,10 @@ class _TransferState extends State<Transfer> {
                     fit: BoxFit.fill,
                   ),),
               ),
-              Container(padding: EdgeInsets.only(top: 5),
-                  child: Text("$title",style: TextStyle(fontWeight: FontWeight.bold,),)
+              Expanded(
+                child: Container(padding: EdgeInsets.only(top: 3),
+                    child: Text("$title",style: TextStyle(fontWeight: FontWeight.bold,),)
+                ),
               ),
             ],
           ),
@@ -51,7 +53,7 @@ class _TransferState extends State<Transfer> {
 
 
     return Scaffold(
-
+         appBar: AppBar(),
         body: Stack(
           children: [
             Container(width: width,
@@ -69,7 +71,7 @@ class _TransferState extends State<Transfer> {
                             padding: EdgeInsets.only(right: width/18),
                             alignment: Alignment.topRight,
                             child: Text("Transfer".tr().toString(),style: TextStyle(
-                              fontSize: height/20,
+                              fontSize: 35,
                               fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
                           ),
                         ),

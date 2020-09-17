@@ -37,8 +37,10 @@ class _waterState extends State<water> {
                     fit: BoxFit.fill,
                   ),),
               ),
-              Container(padding: EdgeInsets.only(top: 5),
-                  child: Text("$title",style: TextStyle(fontWeight: FontWeight.bold,),)
+              Expanded(
+                child: Container(padding: EdgeInsets.only(top: 3),
+                    child: Text("$title",style: TextStyle(fontWeight: FontWeight.bold,),)
+                ),
               ),
 
             ],
@@ -49,6 +51,8 @@ class _waterState extends State<water> {
 
 
     return Scaffold(
+
+        appBar: AppBar(),
 
         body: Stack(
           children: [
@@ -67,7 +71,7 @@ class _waterState extends State<water> {
                             padding: EdgeInsets.only(right: width/18),
                             alignment: Alignment.topRight,
                             child: Text("water".tr().toString(),style: TextStyle(
-                              fontSize: height/20,
+                              fontSize: 35,
                               fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
                           ),
                         ),

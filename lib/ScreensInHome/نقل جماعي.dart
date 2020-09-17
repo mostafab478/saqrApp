@@ -35,9 +35,10 @@ class _MassTransferState extends State<MassTransfer> {
               padding: EdgeInsets.only(right: width/18),
               alignment: Alignment.topRight,
               child: Text("MassTransfer".tr().toString(),style: TextStyle(
-                fontSize: height/20,
+                fontSize: 30,
                 fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
             ),
+            SizedBox(height: height/50,),
             Container(height: height/4,width: width/1.1,
               decoration: BoxDecoration(image:
               DecorationImage(image: AssetImage("lib/Assets/chLocation.png"),
@@ -103,7 +104,9 @@ class _MassTransferState extends State<MassTransfer> {
     );
   }
     return Scaffold(
-      body:Masstrans()
+        appBar: AppBar(),
+
+        body:Masstrans()
 
     );
   }

@@ -24,11 +24,11 @@ class _passForgetState extends State<passForget> {
           child: Column(
             children: [
               SizedBox(height: height/20,),
-              Container(alignment: Alignment.topRight,
+              Container(alignment: Alignment.topCenter,
                 child: Padding(
                   padding: const EdgeInsets.only(right:18.0),
                   child: Text("enterPhoneNum".tr().toString(),style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.height/20,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
                 ),
               ),
@@ -37,19 +37,23 @@ class _passForgetState extends State<passForget> {
                 height:height/5 ,
                 width: width/2,
               ),
+              SizedBox(height: height/10,),
+
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(alignment: Alignment.center,
                   child: Text("forgetpassNum".tr().toString(),style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.height/40,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
                 ),
               ),
+              SizedBox(height: height/30,),
+
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(height: height/13,
                   width: width/1.2,
-                  child: TextFormField(textAlign: TextAlign.end,
+                  child: TextFormField(textAlign: TextAlign.start,
                     decoration: InputDecoration(
                         hintText: "phoneNum".tr().toString(),
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
@@ -57,6 +61,8 @@ class _passForgetState extends State<passForget> {
                   ),
                 ),
               ),
+              SizedBox(height: height/20,),
+
               Padding(
                 padding: const EdgeInsets.only(top: 8.0),
                 child: Container(width: width/1.2,

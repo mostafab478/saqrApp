@@ -23,6 +23,9 @@ class _HomeServiceState extends State<HomeService> {
 
     Widget peopleworking(){
       return Scaffold(
+
+        appBar: AppBar(),
+
         body: Stack(
           children: [
             Column(
@@ -33,14 +36,14 @@ class _HomeServiceState extends State<HomeService> {
                   padding: EdgeInsets.only(right: width/18),
                   alignment: Alignment.topRight,
                   child: Text("serviceproviders".tr().toString(),style: TextStyle(
-                    fontSize: height/20,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
                 ),
                 SizedBox(height:
                 height/16,),
                 Container(height: height/13,
                   width: width/1.2,
-                  child: TextFormField(textAlign: TextAlign.end,
+                  child: TextFormField(textAlign: TextAlign.start,
                     decoration: InputDecoration(
                         hintText: "name".tr().toString(),
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
@@ -49,102 +52,112 @@ class _HomeServiceState extends State<HomeService> {
                 ),
                 SizedBox(height:
                 height/16,),
-                Container(height: height/5,
+                Container(height: height/4,
                   width: width/1.1,
                   decoration: BoxDecoration(border: Border.all(width: 1),borderRadius: BorderRadius.circular(15)),
                   child:
-                  Row(mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(right:12.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(right:2.0),
-                                  child: Text("jojooo",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
-                                ),
-                                Text("serviceprovider".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
+                  Expanded(
+                    child: Row(mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right:12.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Expanded(
+                                child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(right:2.0),
+                                      child: Text("jojooo",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
+                                    ),
+                                    Text("serviceprovider".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
 
-                              ],
-                            ),
-                            Row(mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(right:2.0),
-                                  child: Text("...ثان المنصوره الدقهليه",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
+                                  ],
                                 ),
-                                Text("address".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
+                              ),
+                              Expanded(
+                                child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(right:2.0),
+                                      child: Text("...ثان المنصوره الدقهليه",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
+                                    ),
+                                    Text("address".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
 
-                              ],
-                            ),
-                            Row(mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(right:2.0),
-                                  child: Text("00"
-                                      "966548252999",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
+                                  ],
                                 ),
-                                Text("phoneNum2".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
+                              ),
+                              Expanded(
+                                child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(right:2.0),
+                                      child: Text("966548252999",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
+                                    ),
+                                    Text("phoneNum2".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
 
-                              ],
-                            ),
-                            Row(mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(right:2.0),
-                                  child: Text("notavailable".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
+                                  ],
                                 ),
-                                Text("state".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
+                              ),
+                              Expanded(
+                                child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(right:2.0),
+                                      child: Text("notavailable".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
+                                    ),
+                                    Text("state".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
 
-                              ],
-                            ),
-                            Row(mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(right:2.0),
-                                  child: Icon(Icons.star,color: Colors.grey),
+                                  ],
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right:2.0),
-                                  child: Icon(Icons.star,color: Colors.grey),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right:2.0),
-                                  child: Icon(Icons.star,color: Colors.grey),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right:2.0),
-                                  child: Icon(Icons.star,color: Colors.grey),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right:2.0),
-                                  child: Icon(Icons.star,color: Colors.grey,),
-                                ),
-                                Text("rate".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
+                              ),
+                              Expanded(
+                                child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(right:2.0),
+                                      child: Icon(Icons.star,color: Colors.grey),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right:2.0),
+                                      child: Icon(Icons.star,color: Colors.grey),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right:2.0),
+                                      child: Icon(Icons.star,color: Colors.grey),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right:2.0),
+                                      child: Icon(Icons.star,color: Colors.grey),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right:2.0),
+                                      child: Icon(Icons.star,color: Colors.grey,),
+                                    ),
+                                    Text("rate".tr().toString(),style: TextStyle(fontWeight: FontWeight.bold),),
 
-                              ],
-                            ),
-                          ],
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right:8.0),
-                        child: CircleAvatar(backgroundImage: AssetImage("lib/Assets/chLocation.png"),radius: height/13,),
-                      ),
+                        Padding(
+                          padding: const EdgeInsets.only(right:2.0,left:2.0),
+                          child: CircleAvatar(backgroundImage: AssetImage("lib/Assets/chLocation.png"),radius: height/13,),
+                        ),
 
-                    ],
+                      ],
+                    ),
                   ),
                 ),
-
               ],
             ),
 
             Padding(
-              padding: const EdgeInsets.only(bottom:8.0,left:8.0),
+              padding: const EdgeInsets.only(top:8.0,bottom:8.0,left:8.0),
               child: Column(mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
@@ -163,11 +176,9 @@ class _HomeServiceState extends State<HomeService> {
               ),
             ),
 
-
           ],
         ),
       );
-    }
-    return peopleworking();
+    }    return peopleworking();
   }
 }

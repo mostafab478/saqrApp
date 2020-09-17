@@ -55,7 +55,9 @@ Widget Icons1(String title,var image,tab){
  ),),
         ),
         Container(padding: EdgeInsets.only(top: 5),
-            child: Text("$title",style: TextStyle(fontWeight: FontWeight.bold,),)
+            child: Text("$title",style: TextStyle(fontWeight: FontWeight.bold,
+                // fontSize: height/50
+            ),)  //edit
         ),
       ],
     ),
@@ -65,7 +67,12 @@ Widget Icons1(String title,var image,tab){
 
 
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar(actions: [
+        IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: (){},
+        ),
+      ],
         // backgroundColor: Colors.white,
         leading:
         Container(
@@ -73,7 +80,8 @@ Widget Icons1(String title,var image,tab){
             child: Icon(
               Icons.notifications,color: Colors.white,),
           ),
-          color: Colors.black26,margin: EdgeInsets.all(8),),
+          // color: Colors.black26,margin: EdgeInsets.all(8),
+        ),
       ),
         body: Container(width: width,
          child:
@@ -86,12 +94,16 @@ Widget Icons1(String title,var image,tab){
                    SizedBox(height:
                    height/7),
                    Expanded(
-                     child: Container(
-                       padding: EdgeInsets.only(right: width/18),
-                       alignment: Alignment.topRight,
-                       child: Text("Services".tr().toString(),style: TextStyle(
-                         fontSize: height/20,color: Colors.black,
-                         fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
+                     child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                       children: [
+                         Container(
+                           padding: EdgeInsets.only(right: 20,left: 20),
+                           child: Text("Services".tr().toString(),style: TextStyle(
+                             fontSize: 35,
+                             // color: Colors.black,
+                             fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
+                         ),
+                       ],
                      ),
                    ),
                  ],

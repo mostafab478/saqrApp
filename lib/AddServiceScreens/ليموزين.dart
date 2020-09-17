@@ -6,6 +6,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class taxiAdd extends StatefulWidget {
   @override
@@ -31,16 +32,17 @@ class _taxiAddState extends State<taxiAdd> {
                 Container(
                   padding: EdgeInsets.only(right: width/18),
                   alignment: Alignment.topRight,
-                  child: Text("اضافه الخدمه",style: TextStyle(
-                    fontSize: height/20,
+                  child: Text("addservice".tr().toString(),style: TextStyle(
+                    fontSize: 40,
                     fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
                 ),
+
                 SizedBox(height: height/50,),
                 Container(height: height/13,
                   width: width/1.2,
-                  child: TextFormField(textAlign: TextAlign.end,
+                  child: TextFormField(textAlign: TextAlign.start,
                     decoration: InputDecoration(
-                        hintText: "الموقع",
+                        hintText: "location".tr().toString(),
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
                     ),
                   ),
@@ -48,9 +50,9 @@ class _taxiAddState extends State<taxiAdd> {
                 SizedBox(height: height/50,),
                 Container(height: height/13,
                   width: width/1.2,
-                  child: TextFormField(textAlign: TextAlign.end,
+                  child: TextFormField(textAlign: TextAlign.start,
                     decoration: InputDecoration(
-                        hintText: "صوره الهويه",
+                        hintText: "idpic".tr().toString(),
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
                     ),
                   ),
@@ -58,9 +60,9 @@ class _taxiAddState extends State<taxiAdd> {
                 SizedBox(height: height/50,),
                 Container(height: height/13,
                   width: width/1.2,
-                  child: TextFormField(textAlign: TextAlign.end,
+                  child: TextFormField(textAlign: TextAlign.start,
                     decoration: InputDecoration(
-                        hintText: "صوره الرخصه",
+                        hintText: "licensepic".tr().toString(),
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
                     ),
                   ),
@@ -68,9 +70,9 @@ class _taxiAddState extends State<taxiAdd> {
                 SizedBox(height: height/50,),
                 Container(height: height/13,
                   width: width/1.2,
-                  child: TextFormField(textAlign: TextAlign.end,
+                  child: TextFormField(textAlign: TextAlign.start,
                     decoration: InputDecoration(
-                        hintText: "رقم اللوحه",
+                        hintText: "platenum".tr().toString(),
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
                     ),
                   ),
@@ -78,9 +80,9 @@ class _taxiAddState extends State<taxiAdd> {
                 SizedBox(height: height/50,),
                 Container(height: height/13,
                   width: width/1.2,
-                  child: TextFormField(textAlign: TextAlign.end,
+                  child: TextFormField(textAlign: TextAlign.start,
                     decoration: InputDecoration(
-                        hintText: "صوره المركبه من الامام",
+                        hintText: "platepicfront".tr().toString(),
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
                     ),
                   ),
@@ -88,9 +90,9 @@ class _taxiAddState extends State<taxiAdd> {
                 SizedBox(height: height/50,),
                 Container(height: height/13,
                   width: width/1.2,
-                  child: TextFormField(textAlign: TextAlign.end,
+                  child: TextFormField(textAlign: TextAlign.start,
                     decoration: InputDecoration(
-                        hintText: "صوره المركبه من الخلف",
+                        hintText: "platepicbehind".tr().toString(),
                         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
                     ),
                   ),
@@ -99,23 +101,22 @@ class _taxiAddState extends State<taxiAdd> {
                 Container(
                   padding: EdgeInsets.only(right: width/18),
                   alignment: Alignment.topRight,
-                  child: Text(": صوره اضافيه",style: TextStyle(
-                    fontSize: height/28,
+                  child: Text("anotherpic".tr().toString(),style: TextStyle(
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
                 ),
                 SizedBox(height: height/50,),
-                Row(mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right:18.0),
-                      child: Container(
-                        height: height/9,
-                        width: width/5,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(100),border: Border.all(width: 1)),
-                        child: Icon(Icons.camera_alt,size: height/18,),
-                      ),
+                Container(
+                  alignment: Alignment.topRight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(right:18.0),
+                    child: Container(
+                      height: height/9,
+                      width: width/5,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(100),border: Border.all(width: 1)),
+                      child: Icon(Icons.camera_alt,size: height/18,),
                     ),
-                  ],
+                  ),
                 ),
                 SizedBox(height: height/50,),
 
@@ -130,7 +131,7 @@ class _taxiAddState extends State<taxiAdd> {
                       color: Colors.black,onPressed: (){
                       // Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeScreen()));
                     },
-                      child: Text("اضافه خدمه",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                      child: Text("addservice".tr().toString(),style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                     ),
                   ),
                 ),

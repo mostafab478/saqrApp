@@ -36,9 +36,10 @@ class _CleaningContainersState extends State<CleaningContainers> {
                 padding: EdgeInsets.only(right: width/18),
                 alignment: Alignment.topRight,
                 child: Text("CleaningContainers".tr().toString(),style: TextStyle(
-                  fontSize: height/20,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
               ),
+              SizedBox(height: height/50,),
               Container(height: height/4,width: width/1.1,
                 decoration: BoxDecoration(image:
                 DecorationImage(image: AssetImage("lib/Assets/chLocation.png"),
@@ -118,6 +119,9 @@ class _CleaningContainersState extends State<CleaningContainers> {
       );
     }
     return Scaffold(
+
+        appBar: AppBar(),
+
         body:Movinghouses()
 
     );

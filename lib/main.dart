@@ -39,7 +39,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     Bloc _bloc =  Provider.of<Bloc>(context);
-    _bloc.setTheme(ThemeData.dark());
+
+    //
+    // _bloc.setTheme(ThemeData(appBarTheme: AppBarTheme(color: Colors.black) ,backgroundColor: Colors.black,
+    //     floatingActionButtonTheme:FloatingActionButtonThemeData(backgroundColor: Colors.green)  ));
+
+
+// _bloc.setTheme(ThemeData.dark());
+
 
     return MaterialApp(
       theme: _bloc.getTheme() ,

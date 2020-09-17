@@ -44,7 +44,7 @@ class _SignInState extends State<SignIn> {
 
             Container(height: height/13,
               width: width/1.2,
-              child: TextFormField(textAlign: TextAlign.end,
+              child: TextFormField(textAlign: TextAlign.start,
                 decoration: InputDecoration(
                   hintText: "phoneNum".tr().toString(),
                   border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
@@ -55,7 +55,7 @@ class _SignInState extends State<SignIn> {
               padding: const EdgeInsets.all(8.0),
               child: Container(height: height/13,
                 width: width/1.2,
-                child: TextFormField(textAlign: TextAlign.end,
+                child: TextFormField(textAlign: TextAlign.start,
                   decoration: InputDecoration(
                     hintText: "pass1".tr().toString(),
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))

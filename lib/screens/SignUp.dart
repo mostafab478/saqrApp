@@ -31,9 +31,9 @@ class _SignUpState extends State<SignUp> {
 
             Padding(
               padding: const EdgeInsets.only(right:18.0),
-              child: Container(alignment: Alignment.topRight,
+              child: Container(alignment: Alignment.center,
                 child: Text("newAcc".tr().toString(),style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.height/20,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,  ),textAlign: TextAlign.center,),
               ),
             ),
@@ -44,7 +44,7 @@ class _SignUpState extends State<SignUp> {
                 decoration: BoxDecoration(
                   border: Border.all(width: 1),
                   shape: BoxShape.circle ,
-                    color: Colors.white,
+                    // color: Colors.white,
                   ),
                 child: Icon(Icons.crop_original,size: height/9.5
                   ,),
@@ -54,7 +54,7 @@ class _SignUpState extends State<SignUp> {
             SizedBox(height: height/40,),
             Container(height: height/13,
               width: width/1.2,
-              child: TextFormField(textAlign: TextAlign.end,
+              child: TextFormField(textAlign: TextAlign.start,
                 decoration: InputDecoration(
                     hintText: "UserN".tr().toString(),
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
@@ -65,7 +65,7 @@ class _SignUpState extends State<SignUp> {
               padding: const EdgeInsets.all(8.0),
               child: Container(height: height/13,
                 width: width/1.2,
-                child: TextFormField(textAlign: TextAlign.end,
+                child: TextFormField(textAlign: TextAlign.start,
                   decoration: InputDecoration(
                       hintText: "phoneNum".tr().toString(),
                       border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
@@ -74,7 +74,7 @@ class _SignUpState extends State<SignUp> {
             ),
             Container(height: height/13,
               width: width/1.2,
-              child: TextFormField(textAlign: TextAlign.end,
+              child: TextFormField(textAlign: TextAlign.start,
                 decoration: InputDecoration(
                     hintText: "pass1".tr().toString(),
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(15))
